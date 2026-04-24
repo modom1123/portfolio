@@ -23,7 +23,6 @@ body {
     background: #0D3D40;
 }
 
-/* Constrain home and back images */
 .row-1 > .img-block {
     width: 80px;
     height: 60px;
@@ -102,13 +101,12 @@ nav {
    ============================================ */
 .row-2 {
     position: relative;
-    height: 120px;
+    line-height: 0;
 }
 
 .row2-bg {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
     display: block;
 }
 
@@ -132,14 +130,28 @@ nav {
 .row-3 {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    height: 130px;
+}
+
+.row-3 .img-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* ============================================
    ROW 4: Sky
    ============================================ */
 .row-4 {
-    height: 250px;
+    line-height: 0;
+}
+
+.row-4 .img-block {
+    width: 100%;
+}
+
+.row-4 .img-block img {
+    width: 100%;
+    height: auto;
 }
 
 /* ============================================
@@ -148,7 +160,12 @@ nav {
 .row-5 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    height: 120px;
+}
+
+.row-5 .img-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* ============================================
@@ -166,12 +183,12 @@ nav {
     position: relative;
     overflow: hidden;
     display: block;
+    line-height: 0;
 }
 
 .img-block img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
     display: block;
 }
 
@@ -194,7 +211,6 @@ nav {
     opacity: 1;
 }
 
-/* Clickable */
 .clickable {
     cursor: pointer;
 }
@@ -249,23 +265,20 @@ nav {
 .about-row-1 {
     display: grid;
     grid-template-columns: 150px 1fr 2fr;
-    height: 150px;
 }
 
 .about-row-2 {
     display: grid;
     grid-template-columns: 1fr 1.5fr 1fr;
-    height: 250px;
 }
 
 .about-row-3 {
-    height: 200px;
+    line-height: 0;
 }
 
 .about-row-4 {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    height: 200px;
 }
 
 /* ============================================
@@ -343,21 +356,17 @@ footer a:hover {
 
     .row-5 {
         grid-template-columns: repeat(2, 1fr);
-        height: auto;
     }
 
     .about-row-1 {
         grid-template-columns: 1fr;
-        height: auto;
     }
 
     .about-row-2 {
         grid-template-columns: 1fr;
-        height: auto;
     }
 
     .about-row-4 {
         grid-template-columns: 1fr;
-        height: auto;
     }
 }
