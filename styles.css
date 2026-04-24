@@ -1,40 +1,32 @@
-/* ============================================
-   RESET & BASE
-   ============================================ */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    background: #F5F0E8;
-    padding: 60px;
-}
-
-/* ============================================
-   ROW 1: Home + Nav + Back
-   ============================================ */
-.row-1 {
-    display: grid;
-    grid-template-columns: 80px 1fr 80px;
-    height: 60px;
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     background: #0D3D40;
+    list-style: none;
+    padding: 0.5rem 0;
+    z-index: 100;
+    border-top: 2px solid #D4B83D;
+    white-space: nowrap;
 }
 
-/* ============================================
-   NAVIGATION
-   ============================================ */
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.dropdown-menu li {
+    padding: 0;
 }
 
-.nav-links {
-    display: flex;
-    gap: 2rem;
+.dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}    gap: 2rem;
     list-style: none;
 }
 
