@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mallory Odom | Product Manager</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ROW 1: Home + Nav + Back -->
+    <div class="row-1">
+        <a href="index.html" class="img-block clickable">
+            <img src="images/row1-home.png" class="default" alt="Home">
+            <img src="images/row1-home-hover.png" class="hover" alt="Home">
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="pages/resume.html">RESUME</a></li>
+                <li><a href="pages/implan.html">IMPLAN</a></li>
+                <li><a href="pages/leadventure.html">LEADVENTURE</a></li>
+                <li><a href="pages/dataclover.html">DATACLOVER</a></li>
+                <li><a href="pages/testimonials.html">TESTIMONIALS</a></li>
+                <li><a href="pages/how-i-built-this.html">HOW I BUILT THIS</a></li>
+            </ul>
+        </nav>
+        <a href="javascript:history.back()" class="img-block clickable">
+            <img src="images/row1-back.png" class="default" alt="Back">
+            <img src="images/row1-back-hover.png" class="hover" alt="Back">
+        </a>
+    </div>
+
+    <!-- ROW 2: Background + Overlay -->
+    <div class="row-2">
+        <img src="images/row2-background.png" class="row2-bg" alt="I specialize in connecting the dots">
+        <div class="row2-overlay">
+            <img src="images/row2-crayons.png" alt="Crayons">
+        </div>
+    </div>
+
+    <!-- ROW 3: Click Here -->
+    <div class="row-3">
+        <div class="img-block clickable" onclick="scrollToRow5()">
+            <img src="images/row3-clickhere.png" class="default" alt="Click Here">
+            <img src="images/row3-clickhere-hover.png" class="hover" alt="Click Here">
+        </div>
+        <div class="img-block clickable" onclick="scrollToRow5()">
+            <img src="images/row3-arrow.png" class="default" alt="To view my attempt at some color">
+            <img src="images/row3-arrow-hover.png" class="hover" alt="Arrow">
+        </div>
+    </div>
+
+    <!-- ROW 4: Sky -->
+    <div class="row-4">
+        <div class="img-block" style="height:100%">
+            <img src="images/row4-sky.png" class="default" alt="Looking for something specific?">
+            <img src="images/row4-sky-hover.png" class="hover" alt="Sky">
+        </div>
+    </div>
+
+    <!-- ROW 5: Category Cards -->
+    <div class="row-5" id="categories">
+        <a href="pages/testimonials.html" class="img-block clickable">
+            <img src="images/row5-handshake.png" class="default" alt="Testimonials">
+            <img src="images/row5-handshake-hover.png" class="hover" alt="Testimonials">
+        </a>
+        <a href="pages/resume.html" class="img-block clickable">
+            <img src="images/row5-ruler.png" class="default" alt="Resume">
+            <img src="images/row5-ruler-hover.png" class="hover" alt="Resume">
+        </a>
+        <a href="pages/implan.html" class="img-block clickable">
+            <img src="images/row5-frames.png" class="default" alt="Case Studies">
+            <img src="images/row5-frames-hover.png" class="hover" alt="Case Studies">
+        </a>
+        <a href="pages/testimonials.html" class="img-block clickable">
+            <img src="images/row5-stars.png" class="default" alt="Reviews">
+            <img src="images/row5-stars-hover.png" class="hover" alt="Reviews">
+        </a>
+    </div>
+
+    <!-- ROW 6: Blank -->
+    <div class="row-6"></div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-stripes">
+            <div class="stripe s1"></div>
+            <div class="stripe s2"></div>
+            <div class="stripe s3"></div>
+            <div class="stripe s4"></div>
+            <div class="stripe s5"></div>
+        </div>
+        <p>© 2024 Mallory Odom | <a href="pages/how-i-built-this.html">How I Built This</a></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
