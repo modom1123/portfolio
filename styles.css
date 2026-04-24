@@ -1,0 +1,191 @@
+/* ============================================
+   RESET & BASE
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #F5F0E8;
+    padding: 60px;
+}
+
+/* ============================================
+   ROW 1: Home + Nav + Back
+   ============================================ */
+.row-1 {
+    display: grid;
+    grid-template-columns: 80px 1fr 80px;
+    height: 60px;
+    background: #0D3D40;
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-links a {
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 0.5rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #D4B83D;
+}
+
+/* ============================================
+   ROW 2: Background + Overlay
+   ============================================ */
+.row-2 {
+    position: relative;
+    height: 120px;
+}
+
+.row2-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.row2-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 33.33%;
+    height: 100%;
+}
+
+.row2-overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ============================================
+   ROW 3: Click Here
+   ============================================ */
+.row-3 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 130px;
+}
+
+/* ============================================
+   ROW 4: Sky
+   ============================================ */
+.row-4 {
+    height: 250px;
+}
+
+/* ============================================
+   ROW 5: Category Cards
+   ============================================ */
+.row-5 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 120px;
+}
+
+/* ============================================
+   ROW 6: Blank Spacer
+   ============================================ */
+.row-6 {
+    height: 50px;
+    background: #F5F0E8;
+}
+
+/* ============================================
+   IMAGE BLOCKS
+   ============================================ */
+.img-block {
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.img-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Hover States */
+.img-block .hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.img-block:hover .default {
+    opacity: 0;
+}
+
+.img-block:hover .hover {
+    opacity: 1;
+}
+
+/* Clickable */
+.clickable {
+    cursor: pointer;
+}
+
+/* ============================================
+   FULL PAGE IMAGE (for subpages)
+   ============================================ */
+.page-image {
+    width: 100%;
+}
+
+.page-image img {
+    width: 100%;
+    display: block;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+    background: #1A1A1A;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-stripes {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+.stripe {
+    width: 40px;
+    height: 6px;
+}
+
+.s1 { background: #E86A33; }
+.s2 { background: #C41E7F; }
+.s3 { background: #
