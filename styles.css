@@ -122,13 +122,28 @@ nav {
     bottom: 0;
     width: 33.33%;
     overflow: hidden;
+    line-height: 0;
 }
 
-.row2-overlay img {
+.row2-overlay.img-block img {
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 100%;
     height: 100%;
     object-fit: contain;
     object-position: right center;
+}
+
+.row2-overlay.img-block .hover {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: right center;
+    opacity: 0;
 }
 
 /* ============================================
