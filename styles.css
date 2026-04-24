@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    background: #F5F0E8;
+    background: #FFFFFF;
     padding: 60px;
 }
 
@@ -20,7 +20,7 @@ body {
     display: grid;
     grid-template-columns: 80px 1fr 80px;
     height: 60px;
-    background: #0D3D40;
+    background: transparent;
     overflow: hidden;
 }
 
@@ -35,6 +35,348 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links > li {
+    position: relative;
+}
+
+.nav-links a {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #1A1A1A;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 0.5rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #D4B83D;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FFFFFF;
+    list-style: none;
+    padding: 0.5rem 0;
+    z-index: 100;
+    border-top: 2px solid #D4B83D;
+    white-space: nowrap;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.dropdown-menu li {
+    padding: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #1A1A1A;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* ============================================
+   ROW 2: Full Background + Overlay
+   ============================================ */
+.row-2 {
+    position: relative;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.row2-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.row2-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 33.33%;
+    overflow: hidden;
+}
+
+.row2-overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: right center;
+}
+
+/* ============================================
+   ROW 3: Click Here
+   ============================================ */
+.row-3 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.row-3 .img-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ============================================
+   ROW 4: Sky
+   ============================================ */
+.row-4 {
+    line-height: 0;
+}
+
+.row-4 .img-block {
+    width: 100%;
+}
+
+.row-4 .img-block img {
+    width: 100%;
+    height: auto;
+}
+
+/* ============================================
+   ROW 5: Category Cards
+   ============================================ */
+.row-5 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.row-5 .img-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ============================================
+   ROW 6: Blank Spacer
+   ============================================ */
+.row-6 {
+    height: 50px;
+    background: #FFFFFF;
+}
+
+/* ============================================
+   IMAGE BLOCKS
+   ============================================ */
+.img-block {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 0;
+}
+
+.img-block img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Hover States */
+.img-block .hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.img-block:hover .default {
+    opacity: 0;
+}
+
+.img-block:hover .hover {
+    opacity: 1;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+/* ============================================
+   FULL PAGE IMAGE (for subpages)
+   ============================================ */
+.page-image {
+    width: 100%;
+}
+
+.page-image img {
+    width: 100%;
+    display: block;
+}
+
+/* ============================================
+   ABOUT ME PAGE - GRID SECTIONS
+   ============================================ */
+.section-with-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.section-with-overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.section-with-overlay .text-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.section-with-overlay .text-overlay p {
+    font-family: 'Bebas Neue', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.about-row-1 {
+    display: grid;
+    grid-template-columns: 150px 1fr 2fr;
+}
+
+.about-row-2 {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+}
+
+.about-row-3 {
+    line-height: 0;
+}
+
+.about-row-4 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer {
+    background: #1A1A1A;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-stripes {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+.stripe {
+    width: 40px;
+    height: 6px;
+}
+
+.s1 { background: #E86A33; }
+.s2 { background: #C41E7F; }
+.s3 { background: #D4B83D; }
+.s4 { background: #1A5E63; }
+.s5 { background: #3BA4DC; }
+
+footer p {
+    color: white;
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #D4B83D;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .row-1 {
+        grid-template-columns: 60px 1fr 60px;
+        height: 50px;
+    }
+
+    .row-1 > .img-block {
+        width: 60px;
+        height: 50px;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+        padding: 0.25rem;
+    }
+
+    .row-3 {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .row-5 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-row-1 {
+        grid-template-columns: 1fr;
+    }
+
+    .about-row-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .about-row-4 {
+        grid-template-columns: 1fr;
+    }
+}}
 
 /* ============================================
    NAVIGATION
