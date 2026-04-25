@@ -69,7 +69,6 @@ nav {
     color: #D4B83D;
 }
 
-/* Active/Current Page */
 .nav-links a.active {
     color: #D4B83D;
 }
@@ -225,7 +224,6 @@ nav {
     display: block;
 }
 
-/* Hover States */
 .img-block .hover {
     position: absolute;
     top: 0;
