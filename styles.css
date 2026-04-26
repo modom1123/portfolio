@@ -50,65 +50,61 @@ nav {
     display: flex;
     gap: 2rem;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links > li {
     position: relative;
 }
 
-.nav-links a {
+.nav-links > li > a {
     font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
     color: #1A1A1A;
     text-decoration: none;
     letter-spacing: 1px;
     padding: 0.5rem;
+    display: block;
     transition: color 0.3s;
 }
 
-.nav-links a:hover {
+.nav-links > li > a:hover {
     color: #D4B83D;
 }
 
-.nav-links a.active {
+.nav-links > li > a.active {
     color: #D4B83D;
 }
 
-/* Dropdown Menu */
+/* ============================================
+   DROPDOWN
+   ============================================ */
 .dropdown-menu {
     display: none;
     position: absolute;
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     list-style: none;
+    margin: 0;
     padding: 0.5rem 0;
-    z-index: 100;
-    border-top: 2px solid #D4B83D;
-    white-space: nowrap;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    min-width: 150px;
+    z-index: 1000;
+    border-top: 3px solid #D4B83D;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .dropdown-menu li {
+    margin: 0;
     padding: 0;
 }
 
-.dropdown-menu a {
+.dropdown-menu li a {
     display: block;
-    padding: 0.5rem 1rem;
-    font-size: 0.9rem;
-    text-align: center;
-    color: #1A1A1A;
-}
-
-.dropdown-menu a:hover {
-    color: #D4B83D;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
+    padding: 0.75rem 1.
+}      
 /* ============================================
    ROW 2: Full Background + Overlay
    ============================================ */
