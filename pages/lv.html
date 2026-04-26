@@ -4,16 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leadventure | Mallory Odom</title>
-    
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Styles -->
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-
-    <!-- ROW 1: Home + Nav + Back -->
+    <!-- ROW 1: Navigation -->
     <div class="row-1">
         <a href="../index.html" class="img-block clickable">
             <img src="../images/row1-home.png" class="default" alt="Home">
@@ -22,12 +17,14 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="../index.html">HOME</a></li>
-                <li><a href="resume.html">RESUME</a></li>
-                <li><a href="implan.html">IMPLAN</a></li>
-                <li><a href="leadventure.html">LEADVENTURE</a></li>
-                <li><a href="dataclover.html">DATACLOVER</a></li>
-                <li><a href="testimonials.html">TESTIMONIALS</a></li>
-                <li><a href="how-i-built-this.html">HOW I BUILT THIS</a></li>
+                <li class="dropdown">
+                    <a href="#">EXPERIENCE</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="resume.html">RESUME</a></li>
+                        <li><a href="coding-play.html">CODING PLAY</a></li>
+                    </ul>
+                </li>
+                <li><a href="about-me.html">ABOUT ME</a></li>
             </ul>
         </nav>
         <a href="javascript:history.back()" class="img-block clickable">
@@ -36,12 +33,57 @@
         </a>
     </div>
 
-    <!-- PAGE IMAGE -->
-    <div class="page-image">
-        <img src="../images/leadventure-main.png" alt="Leadventure Case Study">
+    <!-- SECTION 1: Click Around Banner -->
+    <div class="case-study-section">
+        <img src="../images/leadventure-banner.png" alt="Click around to learn more">
     </div>
 
-    <!-- FOOTER -->
+    <!-- SECTION 2: My Role -->
+    <div class="case-study-section">
+        <img src="../images/leadventure-role.png" alt="My Role: Product Manager, Digital Marketing Services - Wilsonville, Oregon">
+    </div>
+
+    <!-- SECTION 3: The Scope -->
+    <div class="case-study-section">
+        <img src="../images/leadventure-scope.png" alt="The Scope: Owned product delivery pipeline for digital marketing services across 4 business units">
+    </div>
+
+    <!-- SECTION 4: Business Units & Team -->
+    <div class="case-study-section">
+        <img src="../images/leadventure-team.png" alt="Business Units, Team Structure, Leadventure">
+    </div>
+
+    <!-- SECTION 5: Products Header -->
+    <div class="case-study-section">
+        <img src="../images/leadventure-products-header.png" alt="Products">
+    </div>
+
+    <!-- SECTION 6: Products Grid -->
+    <div class="case-study-section">
+        <img src="../images/leadventure-products.png" alt="SEM, SEO, Marketing Automation, Targeted Display Advertising">
+    </div>
+
+    <!-- SECTION 7: The Challenge -->
+    <div class="case-study-section">
+        <img src="../images/leadventure-challenge.png" alt="The Challenge: Our product delivery pipeline was disorganized and consistently behind schedule">
+    </div>
+
+    <!-- SECTION 8: What I Did -->
+    <div class="case-study-section">
+        <img src="../images/leadventure-whatidid.png" alt="What I Did: Established Process, Unified Product Suite, Drove Growth">
+    </div>
+
+    <!-- SECTION 9: Accomplishments Header -->
+    <div class="case-study-section">
+        <img src="../images/leadventure-accomplishments-header.png" alt="Accomplishments">
+    </div>
+
+    <!-- SECTION 10: Accomplishments Metrics -->
+    <div class="case-study-section">
+        <img src="../images/leadventure-accomplishments.png" alt="Reduced fulfillment delays by 60%, Increased average deal size by 25%, Built in-house marketing automation system">
+    </div>
+
+    <!-- Footer -->
     <footer>
         <div class="footer-stripes">
             <div class="stripe s1"></div>
@@ -53,7 +95,6 @@
         <p>© 2024 Mallory Odom | <a href="how-i-built-this.html">How I Built This</a></p>
     </footer>
 
-    <!-- Scripts -->
     <script src="../app.js"></script>
 </body>
 </html>
