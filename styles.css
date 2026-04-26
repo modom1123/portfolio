@@ -426,3 +426,16 @@ footer a:hover {
         grid-template-columns: 1fr;
     }
 }
+/* ============================================
+   CASE STUDY PAGES
+   ============================================ */
+.case-study-section {
+    line-height: 0;
+    width: 100%;
+}
+
+.case-study-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
