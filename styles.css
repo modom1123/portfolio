@@ -435,3 +435,9 @@ footer a:hover {
     height: auto;
     display: block;
 }
+/* TEMPORARY DEBUG - DELETE AFTER TESTING */
+.dropdown-menu {
+    display: block !important;
+    background: red !important;
+    padding: 20px !important;
+}
