@@ -4,16 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume | Mallory Odom</title>
-    
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Styles -->
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-
-    <!-- ROW 1: Home + Nav + Back -->
+    <!-- ROW 1: Navigation -->
     <div class="row-1">
         <a href="../index.html" class="img-block clickable">
             <img src="../images/row1-home.png" class="default" alt="Home">
@@ -22,12 +17,14 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="../index.html">HOME</a></li>
-                <li><a href="resume.html">RESUME</a></li>
-                <li><a href="implan.html">IMPLAN</a></li>
-                <li><a href="leadventure.html">LEADVENTURE</a></li>
-                <li><a href="dataclover.html">DATACLOVER</a></li>
-                <li><a href="testimonials.html">TESTIMONIALS</a></li>
-                <li><a href="how-i-built-this.html">HOW I BUILT THIS</a></li>
+                <li class="dropdown">
+                    <a href="#" class="active">EXPERIENCE</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="resume.html">RESUME</a></li>
+                        <li><a href="coding-play.html">CODING PLAY</a></li>
+                    </ul>
+                </li>
+                <li><a href="about-me.html">ABOUT ME</a></li>
             </ul>
         </nav>
         <a href="javascript:history.back()" class="img-block clickable">
@@ -36,12 +33,72 @@
         </a>
     </div>
 
-    <!-- PAGE IMAGE -->
-    <div class="page-image">
-        <img src="../images/resume-main.png" alt="Resume">
+    <!-- RESUME CONTAINER -->
+    <div class="resume-container">
+        
+        <!-- Background Image -->
+        <div class="resume-bg">
+            <img src="../images/resume-background.png" alt="Resume Background">
+        </div>
+
+        <!-- Section: Header/Banner -->
+        <div class="resume-section">
+            <img src="../images/resume-banner.png" alt="Colorful banner">
+        </div>
+
+        <!-- Section: Name & Contact -->
+        <div class="resume-section">
+            <img src="../images/resume-header.png" alt="Mallory Odom | Product Manager">
+        </div>
+
+        <!-- Section: Professional Expertise -->
+        <div class="resume-section">
+            <img src="../images/resume-expertise.png" alt="Professional Expertise">
+        </div>
+
+        <!-- Section: Experience - IMPLAN -->
+        <div class="resume-section">
+            <img src="../images/resume-implan.png" alt="IMPLAN | Product Manager | 2021-2023">
+        </div>
+
+        <!-- Section: Experience - Leadventure -->
+        <div class="resume-section">
+            <img src="../images/resume-leadventure.png" alt="Leadventure | Product Manager and Owner | 2019-2020">
+        </div>
+
+        <!-- Section: Experience - Data Clover -->
+        <div class="resume-section">
+            <img src="../images/resume-dataclover.png" alt="Data Clover | Product Strategist | 2019">
+        </div>
+
+        <!-- Section: Additional Experience -->
+        <div class="resume-section">
+            <img src="../images/resume-additional.png" alt="Additional Experience">
+        </div>
+
+        <!-- Section: Technology Expertise -->
+        <div class="resume-section">
+            <img src="../images/resume-technology.png" alt="Technology Expertise">
+        </div>
+
+        <!-- Section: Certifications -->
+        <div class="resume-section">
+            <img src="../images/resume-certifications.png" alt="Certifications">
+        </div>
+
+        <!-- Section: Education -->
+        <div class="resume-section">
+            <img src="../images/resume-education.png" alt="Education">
+        </div>
+
+        <!-- Section: Footer Stripes -->
+        <div class="resume-section">
+            <img src="../images/resume-footer-stripes.png" alt="Colorful footer">
+        </div>
+
     </div>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <footer>
         <div class="footer-stripes">
             <div class="stripe s1"></div>
@@ -53,7 +110,6 @@
         <p>© 2024 Mallory Odom | <a href="how-i-built-this.html">How I Built This</a></p>
     </footer>
 
-    <!-- Scripts -->
     <script src="../app.js"></script>
 </body>
 </html>
