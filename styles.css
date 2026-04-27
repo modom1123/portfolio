@@ -435,7 +435,44 @@ footer a:hover {
 }
 
 .resume-section img {
-    width: 105%;
+    width: 95%;
     height: auto;
     display: block;
+}
+
+/* ============================================
+   RESUME HOVER LINKS
+   ============================================ */
+.resume-link {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.resume-link .default {
+    width: 95%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.resume-link .hover {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.resume-link:hover .default {
+    opacity: 0;
+}
+
+.resume-link:hover .hover {
+    opacity: 1;
 }
