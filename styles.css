@@ -466,17 +466,18 @@ footer a:hover {
 .resume-page {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 100px);
 }
 
 .resume-bg {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: -60px;
+    right: -60px;
+    width: calc(100% + 120px);
     height: 100%;
     object-fit: cover;
-    object-position: top left;
+    object-position: top center;
     z-index: 0;
 }
 
