@@ -460,3 +460,39 @@ footer a:hover {
     height: auto;
     display: block;
 }
+/* ============================================
+   RESUME PAGE
+   ============================================ */
+.resume-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.resume-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.resume-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.resume-section {
+    position: relative;
+    z-index: 1;
+    line-height: 0;
+}
+
+.resume-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
