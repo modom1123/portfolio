@@ -403,12 +403,14 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* ============================================
+   RESUME PAGE
+   ============================================ */
 .resume-page {
     position: relative;
     width: calc(100% + 120px);
     margin-left: -60px;
     margin-right: -60px;
-    padding: 40px 60px;
     min-height: calc(100vh - 100px);
 }
 
