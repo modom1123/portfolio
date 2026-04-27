@@ -365,9 +365,6 @@ footer {
     background: #1A1A1A;
     padding: 2rem;
     text-align: center;
-    width: calc(100% + 120px);
-    margin-left: -60px;
-    margin-right: -60px;
 }
 
 .footer-stripes {
