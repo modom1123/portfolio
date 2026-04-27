@@ -428,6 +428,19 @@ footer a:hover {
     z-index: 1;
     max-width: 800px;
     margin: 0 auto;
+    padding: 40px 20px;
     background: #FFFFFF;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.resume-section {
+    line-height: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.resume-section img {
+    width: 80%;
+    height: auto;
+    display: block;
 }
