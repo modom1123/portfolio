@@ -411,12 +411,11 @@ footer a:hover {
     width: calc(100% + 120px);
     margin-left: -60px;
     margin-right: -60px;
-    min-height: calc(100vh - 100px);
+    padding: 40px 60px;
     background-image: url('../images/resume-background.png');
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    padding: 40px 60px;
 }
 
 .resume-content {
