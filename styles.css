@@ -580,6 +580,7 @@ html, body {
     background-position: top center;
     background-repeat: no-repeat;
     width: 100%;
+    padding-top: 60px;
 }
 
 
