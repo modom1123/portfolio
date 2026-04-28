@@ -508,7 +508,6 @@ footer a:hover {
 .case-study-section {
     line-height: 0;
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
@@ -518,4 +517,9 @@ footer a:hover {
     width: 100%;
     height: auto;
     display: block;
+}
+
+/* Padding below final case study row */
+.case-study-section:last-of-type {
+    padding-bottom: 60px;
 }
