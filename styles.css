@@ -523,3 +523,13 @@ footer a:hover {
 .case-study-section:last-of-type {
     padding-bottom: 60px;
 }
+/* ============================================
+   TESTIMONIALS PAGE
+   ============================================ */
+.testimonials-page {
+    background-image: url('images/testimonials-background.png');
+    background-size: 100% 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
