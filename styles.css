@@ -502,3 +502,20 @@ footer a:hover {
 .resume-grid-item:hover .hover {
     opacity: 1;
 }
+/* ============================================
+   CASE STUDY PAGES
+   ============================================ */
+.case-study-section {
+    line-height: 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.case-study-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
