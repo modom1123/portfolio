@@ -30,13 +30,32 @@ body {
 .row-1 > .img-block {
     width: 80px;
     height: 60px;
-    overflow: hidden;
+    overflow: visible;          /* was hidden — let hover escape */
+    position: static;           /* so hover positions against .row-1 */
 }
 
-.row-1 > .img-block img {
+.row-1 > .img-block .default {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* Home hover spans the entire row */
+.row-1 > .img-block:first-child .hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;                /* full row-1 width */
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;       /* don't block nav/back clicks */
+    z-index: 1;                 /* under nav (nav is in normal flow) */
+}
+
+/* Keep the back button hover scoped to its own 80px cell */
+.row-1 > .img-block:last-child {
+    overflow: hidden;
+    position: relative;
 }
 
 /* ============================================
@@ -222,7 +241,7 @@ nav {
 .row-5 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    align-items: start;
+    align-items: end;           /* was start — aligns bottom edges */
 }
 
 .row-5 .img-block {
