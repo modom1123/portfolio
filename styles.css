@@ -149,48 +149,20 @@ nav {
     display: block;
 }
 /* ============================================
-   ROW 2: Full Background + Overlay
+   ROW 2: Tagline + Crayons
    ============================================ */
 .row-2 {
-    position: relative;
     line-height: 0;
-    overflow: visible;
-    z-index: 1;
 }
 
-.row2-bg {
+.row-2 .img-block {
+    width: 100%;
+}
+
+.row-2 .img-block img {
     width: 100%;
     height: auto;
     display: block;
-}
-
-.row2-overlay {
-    position: absolute;
-    bottom: -10px;
-    right: 0;
-    width: 300px;
-}
-
-.row2-overlay .default,
-.row2-overlay .hover {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: auto;
-}
-
-.row2-overlay .hover {
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.row2-overlay:hover .default {
-    opacity: 0;
-}
-
-.row2-overlay:hover .hover {
-    opacity: 1;
 }
 
 /* ============================================
