@@ -210,17 +210,12 @@ nav {
 /* ============================================
    ROW 5: Category Cards
    ============================================ */
+/* ============================================
+   ROW 5: Category Cards
+   ============================================ */
 .row-5 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    align-items: stretch;
-    height: 180px;          /* tweak this number to taste */
-}
-
-.row-5 .img-block {
-    line-height: 0;
-    height: 100%;
-    overflow: hidden;
 }
 
 .row-5 .img-block img {
