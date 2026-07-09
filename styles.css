@@ -275,7 +275,7 @@ nav {
 
 .about-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 484fr 599fr 389fr;
 }
 
 .about-cards > * {
