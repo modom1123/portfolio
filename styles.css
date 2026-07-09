@@ -223,11 +223,9 @@ nav {
     flex-shrink: 0;
 }
 
-.row-5 .img-block img {
-    height: 100%;
-    width: auto;
-    object-fit: contain;
-    display: block;
+.row-5 .img-block {
+    height: 160px; 
+    flex-shrink: 0;
 }
 
 .row-5 .img-block .hover {
