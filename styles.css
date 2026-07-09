@@ -213,6 +213,7 @@ nav {
 .row-5 {
     display: flex;
     align-items: stretch;
+    gap: 12px;
 }
 
 .row-5 .img-block {
