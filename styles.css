@@ -245,7 +245,31 @@ nav {
     height: 50px;
     background: #FFFFFF;
 }
+/* ============================================
+   ABOUT ME PAGE - FULL BANNERS + CARD GRID
+   ============================================ */
+.about-banner {
+    line-height: 0;
+    width: 100%;
+}
 
+.about-banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.about-cards img,
+.about-cards .img-block {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 /* ============================================
    IMAGE BLOCKS
    ============================================ */
