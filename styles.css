@@ -209,20 +209,17 @@ nav {
    ROW 5: Category Cards
    ============================================ */
 .row-5 {
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 420fr 420fr 320fr 280fr 260fr;
 }
 
 .row-5 .img-block {
-    height: 280px;
-    flex-shrink: 0;
+    min-width: 0;
 }
 
 .row-5 .img-block img {
-    height: 100%;
-    width: auto;
-    object-fit: contain;
+    width: 100%;
+    height: auto;
     display: block;
 }
 
