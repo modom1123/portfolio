@@ -260,7 +260,7 @@ nav {
 
 .about-strengths-row {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 908.54fr 555fr;
 }
 
 .about-strengths-row > * {
