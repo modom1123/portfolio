@@ -1,7 +1,7 @@
 /* ============================================
    RESET & BASE
    ============================================ */
-* {a
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -263,6 +263,10 @@ nav {
     grid-template-columns: 2fr 1fr;
 }
 
+.about-strengths-row > * {
+    min-width: 0;
+}
+
 .about-strengths-row img {
     width: 100%;
     height: auto;
@@ -272,6 +276,17 @@ nav {
 .about-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+.about-cards > * {
+    min-width: 0;
+}
+
+.about-cards img,
+.about-cards .img-block {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* ============================================
