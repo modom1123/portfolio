@@ -30,8 +30,8 @@ body {
 .row-1 > .img-block {
     width: 80px;
     height: 60px;
-    overflow: visible;          /* was hidden — let hover escape */
-    position: static;           /* so hover positions against .row-1 */
+    overflow: visible;
+    position: static;
 }
 
 .row-1 > .img-block .default {
@@ -40,19 +40,17 @@ body {
     object-fit: cover;
 }
 
-/* Home hover spans the entire row */
 .row-1 > .img-block:first-child .hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;                /* full row-1 width */
+    width: 100%;
     height: 100%;
     object-fit: cover;
-    pointer-events: none;       /* don't block nav/back clicks */
-    z-index: 1;                 /* under nav (nav is in normal flow) */
+    pointer-events: none;
+    z-index: 1;
 }
 
-/* Keep the back button hover scoped to its own 80px cell */
 .row-1 > .img-block:last-child {
     overflow: hidden;
     position: relative;
@@ -144,10 +142,10 @@ nav {
     color: #D4B83D;
 }
 
-/* Show dropdown on hover */
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+
 /* ============================================
    ROW 2: Tagline + Crayons
    ============================================ */
@@ -260,20 +258,9 @@ nav {
     display: block;
 }
 
-.about-strengths-row {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-
-.about-strengths-row img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
 .about-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .about-cards img,
@@ -331,60 +318,6 @@ nav {
 .page-image img {
     width: 100%;
     display: block;
-}
-
-/* ============================================
-   ABOUT ME PAGE - GRID SECTIONS
-   ============================================ */
-.section-with-overlay {
-    position: relative;
-    overflow: hidden;
-}
-
-.section-with-overlay img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.section-with-overlay .text-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-}
-
-.section-with-overlay .text-overlay p {
-    font-family: 'Bebas Neue', sans-serif;
-    color: white;
-    font-size: 1.5rem;
-    letter-spacing: 2px;
-    text-align: center;
-}
-
-.about-row-1 {
-    display: grid;
-    grid-template-columns: 150px 1fr 2fr;
-}
-
-.about-row-2 {
-    display: grid;
-    grid-template-columns: 1fr 1.5fr 1fr;
-}
-
-.about-row-3 {
-    line-height: 0;
-}
-
-.about-row-4 {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
 }
 
 /* ============================================
@@ -463,7 +396,6 @@ footer a:hover {
     display: block;
 }
 
-/* Resume hover links */
 .resume-link {
     position: relative;
     display: block;
@@ -531,37 +463,9 @@ footer a:hover {
 .resume-grid-item:hover .hover {
     opacity: 1;
 }
+
 /* ============================================
    CASE STUDY PAGES
-   ============================================ */
-.case-study-section {
-    line-height: 0;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.case-study-section img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Padding below final case study row */
-.case-study-section:last-of-type {
-    padding-bottom: 60px;
-}
-/* ============================================
-   PREVENT HORIZONTAL OVERFLOW
-   ============================================ */
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-/* ============================================
-   CASE STUDY PAGES (default behavior)
    ============================================ */
 .case-study-section {
     line-height: 0;
@@ -597,6 +501,18 @@ html, body {
 
 .case-study-section:hover > img.hover {
     opacity: 1;
+}
+
+.case-study-section:last-of-type {
+    padding-bottom: 60px;
+}
+
+/* ============================================
+   PREVENT HORIZONTAL OVERFLOW
+   ============================================ */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 /* ============================================
