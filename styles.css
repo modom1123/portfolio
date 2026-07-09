@@ -245,6 +245,7 @@ nav {
     height: 50px;
     background: #FFFFFF;
 }
+
 /* ============================================
    ABOUT ME PAGE - FULL BANNERS + CARD GRID
    ============================================ */
@@ -259,9 +260,20 @@ nav {
     display: block;
 }
 
+.about-strengths-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.about-strengths-row img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .about-cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .about-cards img,
@@ -270,6 +282,7 @@ nav {
     height: auto;
     display: block;
 }
+
 /* ============================================
    IMAGE BLOCKS
    ============================================ */
