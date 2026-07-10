@@ -561,3 +561,6 @@ html, body {
 .no-hover:hover .default {
     opacity: 1;
 }
+.no-hover.resume-link:hover .default {
+    opacity: 1;
+}
