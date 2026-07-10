@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Why this MVP? — Mallory Odom</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    min-height: 100vh;
+    background: #5c1620;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    font-family: sans-serif;
+  }
+
+  .back-link {
+    position: fixed;
+    top: 16px;
+    left: 16px;
+    font-size: 14px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 6px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    z-index: 10;
+  }
+  .back-link:hover { background: rgba(0, 0, 0, 0.55); }
+
+  .paper {
+    position: relative;
+    width: 100%;
+    max-width: 580px;
+    background: #fdfcf7;
+    padding: 60px 40px 50px 70px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+    transform: rotate(-0.6deg);
+    background-image:
+      repeating-linear-gradient(
+        to bottom,
+        transparent,
+        transparent 38px,
+        #cdd9ec 39px
+      );
+    background-position: 0 90px;
+    animation: settle 0.6s ease-out;
+  }
+
+  .paper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 44px;
+    width: 1px;
+    background: #d98a8a;
+  }
+
+  @keyframes settle {
+    from { opacity: 0; transform: rotate(-0.6deg) translateY(10px); }
+    to   { opacity: 1; transform: rotate(-0.6deg) translateY(0); }
+  }
+
+  .ink {
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    line-height: 39px;
+    color: #24356b;
+    font-weight: 500;
+  }
+
+  .ink p { margin: 0 0 0; }
+
+  .ink .emphasis {
+    font-weight: 700;
+    position: relative;
+  }
+
+  .ink .emphasis::after {
+    content: "";
+    position: absolute;
+    left: -2px;
+    right: -4px;
+    bottom: 2px;
+    height: 6px;
+    border-bottom: 2px solid #24356b;
+    border-radius: 50%;
+    transform: rotate(-1deg);
+  }
+</style>
+</head>
+<body>
+
+<a href="../index.html" class="back-link">‹ back to portfolio</a>
+
+<div class="paper">
+  <div class="ink">
+    <p>because I may not have a technical background —</p>
+    <p>but I can damn sure do what I set my mind to.</p>
+    <p>&nbsp;</p>
+    <p>is it perfect? no. is it an MVP? <span class="emphasis">absolutely.</span></p>
+    <p>&nbsp;</p>
+    <p>I may not have been actively working in product</p>
+    <p>these past couple of years, but I've still</p>
+    <p>been keeping up.</p>
+  </div>
+</div>
+
+</body>
+</html>
