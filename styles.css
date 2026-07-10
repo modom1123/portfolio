@@ -558,3 +558,6 @@ html, body {
     height: auto;
     display: block;
 }
+.no-hover:hover .default {
+    opacity: 1;
+}
