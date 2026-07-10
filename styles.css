@@ -210,7 +210,8 @@ nav {
    ============================================ */
 .row-5 {
     display: grid;
-    grid-template-columns: 420fr 420fr 320fr 280fr 260fr;
+    grid-template-columns: 420fr 320fr 280fr 260fr;
+    gap: 0;
 }
 
 .row-5 .img-block {
